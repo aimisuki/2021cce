@@ -1,7 +1,7 @@
 # 2021cce
 程設作業
 
-##第一題
+## 第一題
 
 ```c
 #include <stdio.h>
@@ -16,7 +16,7 @@ int main()
 
 ![1](https://github.com/aimisuki/2021cce/blob/gh-pages/1.png?raw=true)
 
-#第二題
+## 第二題
 
 ```c
 
@@ -36,7 +36,7 @@ int main()
 
 ```
 
-#第三題
+## 第三題
 
 ```c
 
@@ -60,7 +60,7 @@ int main()
 
 ```
 
-#第四題
+## 第四題
 
 ```c
 
@@ -75,5 +75,27 @@ int main()
 	else printf("F\n");
 
 }
+
+```
+## 第五題
+
+```c
+#include <stdio.h>
+int main()
+{
+    int a, b, ans, temp;
+    scanf("%d%d", &a, &b);
+
+    if(b>a) temp=a;
+    else temp=b;
+
+    for(int i=1; i<=temp; i++){
+        if(a%i==0&&b%i==0) ans=i;
+    }
+
+    printf("%d %d\n",a/ans, b/ans);
+
+}
+
 
 ```
