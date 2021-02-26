@@ -13,6 +13,9 @@ int main()
 }
 
 ```
+
+![1](https://github.com/aimisuki/2021cce/blob/gh-pages/1.png?raw=true)
+
 #第二題
 
 ```c
