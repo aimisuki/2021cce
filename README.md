@@ -35,3 +35,45 @@ int main()
 }
 
 ```
+
+#第三題
+
+```c
+
+#include <stdio.h>
+int a[10];
+int main()
+{
+	for(int i=0; i<10; i++){
+		scanf("%d", &a[i]);
+	}
+	
+	int ans=0;
+	
+	for(int i=0; i<10; i++){
+		if(a[i]%3==0){
+			ans += 1;
+		}
+	}
+	printf("%d\n", ans);
+}
+
+```
+
+#第四題
+
+```c
+
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	if(n>=90) printf("A\n");
+	else if(n<90&&n>=80) printf("B\n");
+	else if(n<80&&n>=60) printf("C\n");
+	else printf("F\n");
+
+}
+
+```
