@@ -257,3 +257,30 @@ int main()
 
 
 ```
+
+## 第一題
+1. 老師示範 int *p = &a[2]; *p=222; p = p + 2; *p = 666;
+到底發生了什麼事? 請畫圖解釋
+
+![1](https://github.com/aimisuki/2021cce/blob/gh-pages/week03-1.png)
+
+## 第二題
+2. 老師示範 int *p = &a[2]; *p=222; p = p + 2; *p = 666;
+p--; *p=555;
+到底發生了什麼事? 請畫圖解釋
+
+![1](https://github.com/aimisuki/2021cce/blob/gh-pages/week03-2.png)
+
+## 第三題
+3. 老師把 int * p = &a[2] ; 的 p 心中的值(心裡放住址的小紙條) 印出來給你看 printf("%d\n", p);
+
+![1](https://github.com/aimisuki/2021cce/blob/gh-pages/week03-3.png)
+
+## 第四題
+4. 4. 今天教最重要的是 malloc(), 它是什麼呢? 會幫你準備 memory (allocate memory)。請用老師傳給你的圖, 自己再畫一次, 增加印象。
+    int * p;
+    p = (int *) malloc( sizeof(int) * 10 );
+
+
+![1](https://github.com/aimisuki/2021cce/blob/gh-pages/week03-4.png)
+
