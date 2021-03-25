@@ -3,7 +3,6 @@
 
 ## 第一題
 
-![1](https://github.com/aimisuki/2021cce/blob/gh-pages/1.png?raw=true)
 
 ```c
 #include <stdio.h>
@@ -18,7 +17,6 @@ int main()
 
 ## 第二題
 
-![2](https://github.com/aimisuki/2021cce/blob/gh-pages/2.png?raw=true)
 
 ```c
 
@@ -40,7 +38,7 @@ int main()
 
 ## 第三題
 
-![2](https://github.com/aimisuki/2021cce/blob/gh-pages/3.png?raw=true)
+
 
 ```c
 
@@ -66,7 +64,6 @@ int main()
 
 ## 第四題
 
-![2](https://github.com/aimisuki/2021cce/blob/gh-pages/4.png?raw=true)
 
 ```c
 
@@ -85,7 +82,7 @@ int main()
 ```
 ## 第五題
 
-![2](https://github.com/aimisuki/2021cce/blob/gh-pages/5.png?raw=true)
+
 
 ```c
 #include <stdio.h>
