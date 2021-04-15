@@ -281,3 +281,203 @@ p--; *p=555;
 
 ![1](https://github.com/aimisuki/2021cce/blob/gh-pages/week03-4.png)
 
+## 第一題
+
+從鍵盤讀入1個4位數的整數(1000-9999)。如果該數字構成廻文(即由左而右，由右而左，順序相同)，則顯示YES。如果該數字未構成廻文，則顯示NO。
+
+```c
+
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	
+	int a=n;
+	int ans=0;
+	while(n!=0){
+		ans = ans*10+n%10;
+		n/=10;
+	}
+	
+	if(ans==a) printf("YES\n");
+	else printf("NO\n");
+}
+
+```
+
+## 第二題
+
+設計一個函數f(n)，該函數可以傳回整數n的數字反序排列所組成的整數。 
+數字範圍：整數 1 – 9999 (不含10的倍數) 
+
+```c
+
+#include <stdio.h>
+int ans=0;
+int f(int n)
+{
+	while(n!=0){
+		ans=ans*10+n%10;
+		n/=10;
+	}
+	return ans;
+}
+int main()
+{
+	int a;
+	scanf("%d", &a);
+	printf("%d\n", f(a));
+}
+
+```
+
+## 第三題
+
+讀入一個正整數的數列(逐一輸入正整數，輸入0表示結束，數列至多包含10個整數)，之後再讀入一個正整數，程式可以找出該整數出現在數列中的次數。 
+數字範圍：正整數 1 – 9 
+
+```c
+
+#include <stdio.h>
+int a[10];
+int main()
+{
+	int m, ans=0;
+	
+	for(int i=0; i<10; i++){
+		scanf("%d", &a[i]);
+		if(a[i]==0){
+			break;
+		}
+	}
+	
+	scanf("%d", &m);
+	
+	for(int i=0; i<10; i++){
+		if(a[i]==m) ans++;
+	}
+	printf("%d\n", ans);
+}
+
+```
+
+## 第四題
+
+寫一方法能傳入2個整數，如果第一個數字比第二個數字小，則回傳-1;如果兩個數字相等，則回傳0; 如果第一個數字比第二個數字大，則回傳1。印出比較後的結果。 
+
+```c
+
+#include <stdio.h>
+int f(int a,int b){
+	if(a>b) return 1;
+	else if(a==b) return 0;
+	else return -1;
+}
+int main(){
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d",f(a,b));
+    return 0;
+}
+
+
+```
+
+## 第五題
+
+請撰寫一個程式計算並印出數個整數的加總。假設以999當成警示值。
+
+```c
+
+#include <stdio.h>
+int a[10];
+int main()
+{
+	int i, ans=0;
+	for(i=0; i<100; i++){
+		printf("Enter an integer ( 999 to end ): \n");
+		scanf("%d", &a[i]);
+		if(a[i]==999){
+			break;
+		}
+	}
+	for(int j=0; j<i; j++){
+		ans += a[j];
+	}
+	printf("The total is: %d", ans); 
+}
+```
+
+## 第六題
+
+輸入兩個整數a b，輸出a除以b的餘數
+
+```c
+
+#include <stdio.h>
+int main()
+{
+	int n, m;
+	scanf("%d%d", &n, &m);
+	printf("%d", n%m);
+	
+}
+
+```
+
+## 第七題
+
+輸入一個整數成嫧，如果所輸入的整數大於或等於90，則輸出A; 如果輸入的整數小於90但大於等於80，則輸出B;如果小於80但大於或等於70，則輸出C;如果小於70但大於或等於60，則輸出D;如為其他整數則輸出F。 
+
+```c
+
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	
+	if(n>=90) printf("A");
+	else if(n<90&&n>=80) printf("B");
+	else if(n<80&&n>=70) printf("C");
+	else if(n<70&&n>=60) printf("D");
+	else  printf("F");
+}
+```
+
+## 第八題
+
+輸入里程公尺數，輸出應付的車資。計程車資計算方式為: 起跳100元(1500公尺)，續跳5元(每250公尺)註:不足250公尺也要5元。 
+
+```c
+
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	if(n>1500&&n/250!=0) n=(n-1500)/250+1;
+	printf("%d", 100+n*5);
+}
+
+```
+
+## 第九題
+
+假設有50元、10元、5元和1元等4種硬幣，請輸入一個金額，並顯示等同於該金額所需的最少硬幣組合。
+
+```c
+
+#include <stdio.h>
+int main()
+{
+	#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	printf("%d=50*%d+10*%d+5*%d+1*%d", n, n/50, n%50/10, n%10/5, n%5);
+}
+
+```
