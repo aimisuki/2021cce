@@ -485,7 +485,7 @@ int main()
 
 輸入樹木名稱輸出每種樹木出現的機率
 
-```
+```c
 
 #include <stdio.h>
 #include <string.h>
